@@ -2,11 +2,11 @@ import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
 
-const port=1000
+const PORT= process.env.PORT || 3000
 const app= express()
 app.use(cors())
 app.use(express.json())
-app.listen(port,()=>{
+app.listen(PORT,"0.0.0.0",()=>{
     console.log('Server Started')
 })
 app.post('/',(req,res)=>{
