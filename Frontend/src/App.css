@@ -385,6 +385,7 @@ color:green
   }
   #contactme{
     align-items: center;
+    gap:10px
   }
   #names{
     width:100px;
@@ -398,11 +399,12 @@ color:green
     font-size: 12px;;
   }
   .webdevser{
-    height:500px;
+    height:550px;
     width:260px;
   }
   #serlist{
     flex-direction: column;
+    gap:90px
   }
   #scrible, #restraunt, #url, #weather{
     height:230px;
@@ -412,7 +414,7 @@ color:green
     flex-direction: column;
   }
   #hr{
-    top:110%
+    display:none
   }
   .bottom{
     font-size: 10px;
@@ -464,7 +466,7 @@ align-items: center;  }
     flex-direction: column;
     padding-left: 0;
     justify-content: center;
-    gap:40px
+    gap:20px
   }
   #jasmehpic{
     height:150px;
@@ -504,9 +506,7 @@ align-items: center;  }
     font-size:15px
   }
   #hr1{
-    width:25px;
-    height: 1px;
-    top:5%
+    display:none
   }
   #cv{
     height:25px;
