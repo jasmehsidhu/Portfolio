@@ -500,13 +500,14 @@ align-items: center;  }
     font-size:20px;
   }
   #paragraph{
-    width:80%
+    width:85%
   }
   a{
     font-size: 13px;
   }
   #links{
     gap:10px;
+    margin-left:10px
   }
   #maininfo{
     align-items: center;
@@ -522,7 +523,7 @@ align-items: center;  }
   }
   #cv{
     height:35px;
-    width:80px;
+    width:110px;
     font-size:10px;
     border: none;
   }
