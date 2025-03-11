@@ -458,11 +458,15 @@ color:red
   #skillst{
     font-size:30px
   }
+  #skills{
+    margin-top:30px
+  }
   #skillsinfo{
     flex-direction: column;
 align-items: center;  }
   #info{
     align-items: center;
+    margin-top:-40px;
   }
   #about{
     padding:0
@@ -472,7 +476,8 @@ align-items: center;  }
   }
   #abp{
     font-size:15px;
-    width:100%
+    width:100%;
+    margin-top:20px
   }
   .top{
     font-size: 22px;;
@@ -498,10 +503,11 @@ align-items: center;  }
     width:150px;
   }
   #hey{
-    font-size:15px
+    font-size:15px;
   }
   #mainame{
-    font-size:30px
+    font-size:30px;
+    margin-top:40px
   }
   #designation{
     font-size: 20px;
@@ -557,5 +563,8 @@ align-items: center;  }
   }
   #links2>#skil:active{
    color: mediumturquoise;
+  }
+  #paragraph,#cv{
+    margin-top: -30px;
   }
 }
