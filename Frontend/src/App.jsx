@@ -8,20 +8,34 @@ import notes from './assets/notes.jpg'
 import axios from 'axios'
 
 function App() {
-  async function send(){
-    showsuccess(true)
-    var sendMail=await axios.post('http://10.0.0.65:1000/',{
-      username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
-      email:document.getElementById('email').value,
-      message:document.getElementsByTagName('textarea')[0].value
-    })
-
+  async function send(e){
+    e.preventDefault()
+    var fname=document.getElementsByTagName('input')[0].value
+    var lname=document.getElementsByTagName('input')[1].value
+    var email=document.getElementById('email').value
+    var msg=document.getElementsByTagName('textarea')[0].value
+    if(msg===''||fname===''||email===''||lname===''){
+          setrejection('Please enter all fields')
+          showrejection(true)
+          showsuccess(false)
+    }
+    else{
+      showsuccess(true)
+      showrejection(false)
+      var sendMail=await axios.post('http://10.0.0.65:1000/',{
+        username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
+        email:document.getElementById('email').value,
+        message:document.getElementsByTagName('textarea')[0].value
+      })
+    }
   }
   var [bline,setbline]=useState('63.2%')
   var [cline,setcline]=useState()
   var [skills,showskills]=useState(true)
   var [edu,showedu]=useState(false)
+  var [rmessage,setrejection]=useState('invalid')
   var [success,showsuccess]=useState(false)
+  var [rejection,showrejection]=useState(false)
   return (
     <>
    <section id="navbar">
@@ -144,14 +158,16 @@ function App() {
        </div>
       </div>
       <form id='form'>
-{success?         <div id='success'><p id='suc'>Your message was sent!</p></div>
+{success?<div id='success'><p id='suc'>Your message was sent!</p></div>
+:null}
+{rejection?<div id='reject'><p id='rej'>{rmessage}</p></div>
 :null}<div id='namenlast'>
 <input class='jasmeh' placeholder='First name' id='names' type='text'></input>
 <input class='jasmeh' placeholder='Last name' id='names' type='text'></input>
   </div>     
-  <input placeholder='Email' id='email' type='text'></input> 
+  <input placeholder='Email' id='email' type='email' required></input> 
   <textarea placeholder='Message...' rows='10'></textarea>
-  <button type='button' onClick={send} id='submit'>Send</button>
+  <button type='submit' onClick={send} id='submit'>Send</button>
   </form>
     </section>
     </>
