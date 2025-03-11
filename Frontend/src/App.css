@@ -82,7 +82,8 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 #abp{
   width:100%;
   font-family: "Afacad Flux", sans-serif;
-  color:#c5c4c4
+  color:#c5c4c4;
+  margin-top:-40px
 }
 #about{
   margin-top:13%;
@@ -105,6 +106,7 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
   display: flex;
   gap:0px;
   flex-direction: column;
+  margin-top:-30px
 }
 .top{
   color:mediumturquoise;
