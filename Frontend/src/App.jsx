@@ -10,7 +10,7 @@ import axios from 'axios'
 function App() {
   async function send(){
     showsuccess(true)
-    var sendMail=await axios.post('https://myportbackend-ktny.onrender.com/',{
+    var sendMail=await axios.post('http://10.0.0.65:1000/',{
       username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
       email:document.getElementById('email').value,
       message:document.getElementsByTagName('textarea')[0].value
@@ -30,7 +30,7 @@ function App() {
     </h1>
     <hr id='hr1' style={{ left:bline}}></hr>
     <div id='links'>
-      <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left,window.location.href='#home')}}>Home</a>
+      <a id='hlink' onClick={(e)=>{setbline(e.target.getBoundingClientRect().left,window.location.href='#home')}}>Home</a>
       <a  onClick={(e)=>{setbline(e.target.getBoundingClientRect().left, window.location.href='#about')}} >About</a>
       <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left),window.location.href='#projects'}}>Projects</a>
       <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left),window.location.href='#services'}}>Services</a>
