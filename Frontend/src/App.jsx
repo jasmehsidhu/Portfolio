@@ -10,7 +10,7 @@ import axios from 'axios'
 function App() {
   async function send(){
     showsuccess(true)
-    var sendMail=await axios.post('https://myportbackend-ktny.onrender.com',{
+    var sendMail=await axios.post('http://10.0.0.65:1000/',{
       username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
       email:document.getElementById('email').value,
       message:document.getElementsByTagName('textarea')[0].value
@@ -58,8 +58,8 @@ function App() {
       <p id='abp'>Skilled in online and app development, with a focus on React, React Native, and current front-end and back-end technologies.  Proficient in developing responsive websites and cross-platform mobile apps, with a heavy emphasis on performance and user experience.  Currently enrolled at Turner Fenton Secondary School (TFSS) in Brampton.
         .</p>
         <div id='links2'>
-          <a onClick={(e)=>{setcline(e.target.getBoundingClientRect().left),showskills(true),showedu(false)}}>Skills</a>
-          <a onClick={(e)=>{setcline(e.target.getBoundingClientRect().left, showskills(false),showedu(true))}}>Education</a>
+          <a id='skil' onClick={(e)=>{setcline(e.target.getBoundingClientRect().left),showskills(true),showedu(false),document.getElementById('skil').style.color='mediumturquoise',document.getElementById('ed').style.color='#c5c4c4'}}>Skills</a>
+          <a id='ed' onClick={(e)=>{setcline(e.target.getBoundingClientRect().left, showskills(false),showedu(true)),document.getElementById('ed').style.color='mediumturquoise',document.getElementById('skil').style.color='#c5c4c4'}}>Education</a>
         </div>
      {skills?    <div id='skills'>
        <div id='webdevs'>
