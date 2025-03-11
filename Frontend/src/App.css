@@ -469,7 +469,7 @@ align-items: center;  }
     flex-direction: column;
     padding-left: 0;
     justify-content: center;
-   
+    gap:-10px
   }
   #jasmehpic{
     height:150px;
@@ -488,10 +488,19 @@ align-items: center;  }
     margin-top:4px;
     width:60%;
   }
+  #mainame{
+    margin-top: -20px;
+  }
+  #designation{
+    margin-top:-20px
+  }
   #name{
     color: white;
     font-family: "Afacad Flux", sans-serif;
     font-size:15px;
+  }
+  #paragraph{
+    width:80%
   }
   a{
     font-size: 10px;
