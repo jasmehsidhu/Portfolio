@@ -93,7 +93,6 @@ function App() {
         <h1 class='top' id='webdev'>Schooling</h1>
         <h1 class='bottom' id='webdevr'>Turner Fenton Secondary School , Brampton, ON</h1>
        </div></div>:null}
-        <hr style={{left:cline}} id='hr'></hr>
         </div>
       </div>
     </section>
