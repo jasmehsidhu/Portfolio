@@ -228,6 +228,9 @@ html{
   align-items:center;
   gap:50px
 }
+#skil{
+color:mediumturquoise
+}
 .webdevser{
   height:250px;
   width:580px;
@@ -363,6 +366,19 @@ color:mediumturquoise
 }
 #suc{
 color:green
+}
+#reject{
+  width:400px;
+  height:30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:4px solid red;
+  border-radius: 5px;
+}
+#rej{
+color:red
 }
 @media (max-width:768px){
   #success{
@@ -517,6 +533,9 @@ align-items: center;  }
   }
   #paragraph{
     font-size:15px
+  }
+  .emailname{
+    font-size:20px
   }
   #hr1{
     display:none
