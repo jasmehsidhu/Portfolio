@@ -59,7 +59,8 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
   margin-bottom: -40px;
 }
 #mainame{
-  font-size:60px
+  font-size:60px;
+  margin-top:50px
 }
 #designation{
   font-size: 40px;
