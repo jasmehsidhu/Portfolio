@@ -1,0 +1,516 @@
+#name{
+  color: white;
+  font-family: "Afacad Flux", sans-serif;
+  font-size:35px;
+}
+span{
+  color:mediumturquoise
+}
+#links{
+  font-family: "Afacad Flux", sans-serif;
+  display: flex;
+  gap:40px;
+}
+a{
+  font-size: 25px;
+  cursor:pointer
+}
+#hr1{
+  width:45px;
+  height:3px;
+  background-color:mediumturquoise;
+  border: none;
+  position: absolute;
+  top:8.5%;
+  transition: left 0.4s ease;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+/* Navbar done */
+
+#jasmehpic{
+height:350px;
+width:350px;
+border-radius: 50%;
+box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
+}
+#home{
+  display: flex;
+  margin-top: 8%;
+  padding-left: 20%;
+  gap:10%;
+  align-items: center;
+}
+#skillst{
+  font-family:"Afacad Flux", sans-serif ;
+  font-size:50px;
+}
+#maininfo{
+  display: flex;
+  flex-direction: column;
+  font-family: "Afacad Flux", sans-serif;
+  gap:0
+}
+#hey{
+  font-size:30px
+}
+#mainame{
+  font-size:60px
+}
+#designation{
+  font-size: 40px;
+}
+#paragraph{
+  margin-top:10px;
+  width:60%;
+}
+#cv{
+  height:35px;
+  width:100px;
+  margin-top:10px;
+  border-radius:10px;
+  color:white;
+  background-color: mediumturquoise;
+}
+/* done for home section */
+
+#abp{
+  width:85%;
+  font-family: "Afacad Flux", sans-serif;
+  color:#c5c4c4
+}
+#about{
+  margin-top:13%;
+  display: flex;
+  justify-content: center;
+  padding-left:7%;
+}
+#skillsinfo{
+  display: flex;
+  flex-direction: row;
+  gap:40px
+}
+#laptop{
+  height:500px;
+  width:500px;
+  border-radius: 20px;;
+}
+#skills,#edu{
+  margin-top: 30px;
+  display: flex;
+  gap:20px;
+  flex-direction: column;
+}
+.top{
+  color:mediumturquoise;
+  font-family: "Afacad Flux", sans-serif;
+  font-size:20px;
+}
+.bottom{
+  color:mediumturquoise;
+  font-family: "Afacad Flux", sans-serif;
+  color:#c5c4c4;
+  font-size:18px
+}
+#info{
+  display: flex;
+  flex-direction: column;
+}
+#links2{
+  display: flex;
+  gap:20px;
+  font-family: "Afacad Flux", sans-serif;
+  margin-top:20px;
+  color:#c5c4c4
+}
+#hr{
+position: absolute;
+width:25px;
+border:none;
+background-color: mediumturquoise;
+height:2px;
+transition: left 0.2s ease;
+top:128.5%
+}
+/* about section done*/
+#projects{
+  margin-top:8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:50px
+}
+.tprojects{
+  font-family: "Afacad Flux", sans-serif;
+  font-size:40px
+}
+#scrible, #restraunt, #url, #weather{
+  height:300px;
+  width:300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:20px;
+  display:flex;
+  align-items: end;
+  background-position: center;
+}
+#scrible{
+  background-image: url('./assets/notes.jpg');
+}
+#url{
+  background-image: url('./assets/url.jpg');
+}
+#restraunt{
+  background-image: url('./assets/restraunt.jpg');
+}
+#weather{
+  background-image: url('./assets/weather.jpg');
+}
+#prolist{
+  display: flex;
+  gap:60px;
+}
+.first{
+  height:300px;
+  width:300px;
+  background: linear-gradient(to top,mediumturquoise,transparent);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+  display:flex;
+  height:0%;
+  overflow:hidden;
+ transition: height 1s ease}
+#scrible:hover  .first{
+  height:100%;
+}
+#restraunt:hover  .first{
+  height:100%;
+}
+#url:hover  .first{
+  height:100%;
+}
+#weather:hover  .first{
+  height:100%;
+}
+.icon{
+  height:30px;
+  width:80px;
+  color:white;
+  background-color: mediumturquoise;
+  border:none;
+  border-radius: 10px;
+
+}
+.icon:hover{
+  border: white 2px solid;
+  color:white;
+  background: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.stitle{
+  font-family: "Afacad Flux", sans-serif;
+  font-size:32px
+}
+/* Project section done*/
+#services{
+  margin-top:12%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap:50px
+}
+.webdevser{
+  height:250px;
+  width:580px;
+  background-color: mediumturquoise;
+  border-radius:20px;
+  border:7px solid mediumturquoise;
+  transition: transform 0.7s ease;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  cursor: pointer;
+}
+#serlist{
+  display:flex;
+  gap:50px
+}
+.webdevser:hover{
+  background-color: white;
+  transform: scale(1.1);
+}
+.webdevser:hover .stitles{
+  color:mediumturquoise;
+}
+.webdevser:hover .serpara{
+  color:mediumturquoise;
+}
+.stitles{
+  font-family: "Afacad Flux", sans-serif;
+  font-size:35px
+}
+.serpara{
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 16px;
+}
+/* service section done*/
+#contact{
+  margin-top:12%;
+  display: flex;
+  justify-content: center;
+  font-family: "Afacad Flux", sans-serif;
+  gap:10%
+}
+.emailname{
+  font-size:20px
+}
+#stitle{
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 50px;
+}
+#contactme{
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+}
+#contain{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+#socials{
+  font-size: 35px;
+  display: flex;
+  gap:30px;
+}
+#socials>i{
+  color: grey;
+}
+#socials>i:hover{
+  color: mediumturquoise;
+}
+input{
+  background-color: #1f1e1e;
+  border:none;
+  border-radius:5px
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+#email{
+  height:3px;
+  width:610px;
+  padding:15px;
+  color:#c5c4c4;
+  font-size:17px
+}
+textarea{
+  width:600px;
+  background-color: #1f1e1e;
+  border:none;
+  border-radius:5px;
+  color:#c5c4c4;
+  padding:20px;
+  font-size:17px
+}
+#submit{
+  height:40px;
+  width:120px;
+  font-size:15px;
+  border-radius: 5px;
+  background-color: mediumturquoise;
+  border:none;
+  color:white;
+  transition: background 0.7s ease
+}
+#submit:hover{
+background: none;
+border:1px solid mediumturquoise;
+color:mediumturquoise
+}
+#names{
+  height:3px;
+  width:280px;
+  padding:15px;
+  color:#c5c4c4;
+  font-size:17px
+}
+#namenlast{
+  display: flex;
+  gap:20px
+}
+#success{
+  width:400px;
+  height:30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:4px solid green;
+  border-radius: 5px;
+}
+#suc{
+color:green
+}
+@media (max-width:768px){
+  #success{
+    width:200px
+  }
+  #socials>i{
+    font-size: 20px;
+  }
+  #socials{
+    gap:20px
+  }
+  #submit{
+    height:30px;
+    width:90px;
+  }
+  #contact{
+    flex-direction: column;
+    gap:60px;
+    align-items: center;
+  }
+  #contactme{
+    align-items: center;
+  }
+  #names{
+    width:100px;
+    font-size: 12px;
+  }
+  textarea{
+    width:240px
+  }
+  #email{
+    width:250px;
+    font-size: 12px;;
+  }
+  .webdevser{
+    height:500px;
+    width:260px;
+  }
+  #serlist{
+    flex-direction: column;
+  }
+  #scrible, #restraunt, #url, #weather{
+    height:230px;
+    width:300px
+  }
+  #prolist{
+    flex-direction: column;
+  }
+  #hr{
+    top:110%
+  }
+  .bottom{
+    font-size: 10px;
+  }
+  #projects{
+    margin-top:20vh
+  }
+  #about{
+    margin-top:20vh
+  }
+  #contact{
+    margin-top:10vh
+  } #services{
+    margin-top:20vh
+  }
+  #links2>a{
+    font-size:20px
+  }
+  #skillst{
+    font-size:20px
+  }
+  #skillsinfo{
+    flex-direction: column;
+align-items: center;  }
+  #info{
+    align-items: center;
+  }
+  #about{
+    padding:0
+  }
+  #abp{
+    font-size:10px;
+    width:60%
+  }
+  .top{
+    font-size: 15px;;
+  }
+  #laptop{
+    height:200px;
+    width:300px;
+  }
+  #stitle{
+    font-size: 30px;
+  }
+  .emailname{
+    font-size:15px
+  }
+  #home{
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+    gap:40px
+  }
+  #jasmehpic{
+    height:150px;
+    width:150px;
+  }
+  #hey{
+    font-size:15px
+  }
+  #mainame{
+    font-size:30px
+  }
+  #designation{
+    font-size: 20px;
+  }
+  #paragraph{
+    margin-top:4px;
+    width:60%;
+  }
+  #name{
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+    font-size:15px;
+  }
+  a{
+    font-size: 10px;
+  }
+  #links{
+    gap:10px
+  }
+  #maininfo{
+    align-items: center;
+  }
+  #navbar{
+    padding-right: 0;
+  }
+  #paragraph{
+    font-size:15px
+  }
+  #hr1{
+    width:25px;
+    height: 1px;
+    top:5%
+  }
+  #cv{
+    height:25px;
+    width:80px;
+    font-size:10px;
+  }
+}
