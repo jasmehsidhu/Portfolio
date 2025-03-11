@@ -53,16 +53,17 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
   display: flex;
   flex-direction: column;
   font-family: "Afacad Flux", sans-serif;
-  gap:0
 }
 #hey{
-  font-size:30px
+  font-size:30px;
+  margin-bottom: -40px;
 }
 #mainame{
   font-size:60px
 }
 #designation{
   font-size: 40px;
+  margin-top: -40px;
 }
 #paragraph{
   margin-top:10px;
@@ -79,7 +80,7 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 /* done for home section */
 
 #abp{
-  width:85%;
+  width:100%;
   font-family: "Afacad Flux", sans-serif;
   color:#c5c4c4
 }
@@ -102,7 +103,7 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 #skills,#edu{
   margin-top: 30px;
   display: flex;
-  gap:20px;
+  gap:0px;
   flex-direction: column;
 }
 .top{
@@ -119,6 +120,7 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 #info{
   display: flex;
   flex-direction: column;
+  gap:0px
 }
 #links2{
   display: flex;
@@ -232,7 +234,7 @@ html{
 color:mediumturquoise
 }
 .webdevser{
-  height:250px;
+  height:270px;
   width:580px;
   background-color: mediumturquoise;
   border-radius:20px;
@@ -241,7 +243,6 @@ color:mediumturquoise
   padding:20px;
   display: flex;
   flex-direction: column;
-  gap:20px;
   cursor: pointer;
 }
 #serlist{
@@ -384,7 +385,7 @@ color:red
   #success{
     width:200px
   }
-   #reject{
+  #reject{
     width:200px
   }
   #socials>i{
