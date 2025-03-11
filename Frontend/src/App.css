@@ -497,16 +497,16 @@ align-items: center;  }
   #name{
     color: white;
     font-family: "Afacad Flux", sans-serif;
-    font-size:15px;
+    font-size:20px;
   }
   #paragraph{
     width:80%
   }
   a{
-    font-size: 10px;
+    font-size: 13px;
   }
   #links{
-    gap:10px
+    gap:10px;
   }
   #maininfo{
     align-items: center;
