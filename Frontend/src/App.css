@@ -399,7 +399,7 @@ color:green
     font-size: 12px;;
   }
   .webdevser{
-    height:550px;
+    height:580px;
     width:260px;
   }
   #serlist{
@@ -445,6 +445,9 @@ align-items: center;  }
   #about{
     padding:0
   }
+  #contain{
+        gap:0px;
+  }
   #abp{
     font-size:10px;
     width:60%
@@ -466,7 +469,7 @@ align-items: center;  }
     flex-direction: column;
     padding-left: 0;
     justify-content: center;
-    gap:20px
+   
   }
   #jasmehpic{
     height:150px;
@@ -509,8 +512,9 @@ align-items: center;  }
     display:none
   }
   #cv{
-    height:25px;
+    height:35px;
     width:80px;
     font-size:10px;
+    border: none;
   }
 }
