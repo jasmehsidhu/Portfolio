@@ -294,7 +294,7 @@ color:mediumturquoise
 #contain{
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap:0
 }
 #socials{
   font-size: 35px;
