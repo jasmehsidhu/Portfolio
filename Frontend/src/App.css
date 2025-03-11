@@ -64,8 +64,6 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 }
 #designation{
   font-size: 40px;
-  margin-top: -50px;
-
 }
 #paragraph{
   margin-top:-10px;
@@ -510,7 +508,8 @@ align-items: center;  }
   }
   #mainame{
     font-size:30px;
-    margin-top:40px
+    margin-top:70px
+
   }
   #designation{
     font-size: 20px;
