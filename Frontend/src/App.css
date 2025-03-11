@@ -106,7 +106,7 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
   display: flex;
   gap:0px;
   flex-direction: column;
-  margin-top:-30px
+  margin-top:-15px
 }
 .top{
   color:mediumturquoise;
@@ -268,6 +268,7 @@ color:mediumturquoise
 .serpara{
   font-family: "Afacad Flux", sans-serif;
   font-size: 16px;
+  margin-top: -20px;
 }
 /* service section done*/
 #contact{
@@ -287,7 +288,6 @@ color:mediumturquoise
 #contactme{
   display: flex;
   flex-direction: column;
-  gap:40px;
 }
 #contain{
   display: flex;
