@@ -107,7 +107,7 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
   display: flex;
   gap:0px;
   flex-direction: column;
-  margin-top:-15px
+  margin-top:-5px
 }
 .top{
   color:mediumturquoise;
