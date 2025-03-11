@@ -63,16 +63,17 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 }
 #designation{
   font-size: 40px;
-  margin-top: -40px;
+  margin-top: -50px;
+
 }
 #paragraph{
-  margin-top:10px;
+  margin-top:-10px;
   width:60%;
 }
 #cv{
   height:35px;
   width:100px;
-  margin-top:10px;
+  margin-top:-10px;
   border-radius:10px;
   color:white;
   background-color: mediumturquoise;
@@ -122,7 +123,8 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 #info{
   display: flex;
   flex-direction: column;
-  gap:0px
+  gap:0px;
+  margin-top: -60px;
 }
 #links2{
   display: flex;
@@ -563,8 +565,5 @@ align-items: center;  }
   }
   #links2>#skil:active{
    color: mediumturquoise;
-  }
-  #paragraph,#cv{
-    margin-top: -30px;
   }
 }
