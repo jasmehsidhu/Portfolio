@@ -417,7 +417,7 @@ color:green
     display:none
   }
   .bottom{
-    font-size: 10px;
+    font-size: 18px;
   }
   #projects{
     margin-top:20vh
@@ -434,7 +434,7 @@ color:green
     font-size:20px
   }
   #skillst{
-    font-size:20px
+    font-size:30px
   }
   #skillsinfo{
     flex-direction: column;
@@ -449,11 +449,11 @@ align-items: center;  }
         gap:0px;
   }
   #abp{
-    font-size:10px;
-    width:60%
+    font-size:15px;
+    width:100%
   }
   .top{
-    font-size: 15px;;
+    font-size: 22px;;
   }
   #laptop{
     height:200px;
@@ -489,11 +489,12 @@ align-items: center;  }
     width:60%;
   }
   #mainame{
-    margin-top: -20px;
+    margin-top: -15px;
   }
   #designation{
     margin-top:-20px
   }
+
   #name{
     color: white;
     font-family: "Afacad Flux", sans-serif;
@@ -507,7 +508,6 @@ align-items: center;  }
   }
   #links{
     gap:10px;
-    margin-left:10px
   }
   #maininfo{
     align-items: center;
