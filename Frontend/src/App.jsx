@@ -22,7 +22,7 @@ function App() {
     else{
       showsuccess(true)
       showrejection(false)
-      var sendMail=await axios.post('http://10.0.0.65:1000/',{
+      var sendMail=await axios.post('https://portfolio-backend-a5yz.onrender.com',{
         username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
         email:document.getElementById('email').value,
         message:document.getElementsByTagName('textarea')[0].value
