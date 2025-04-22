@@ -146,7 +146,7 @@ function App() {
       <div id='contactme'>
         <h1 id='stitle'>Let's get in touch!</h1>
        <div id='contain'>
-       <h1 class='emailname'><i style={{color:'mediumturquoise'}}class="fa-solid fa-paper-plane"></i><span style={{color:'black'}}>.....</span>jasmehsidhu@gmail.com</h1>
+       <h1 class='emailname'><i style={{color:'mediumturquoise'}}class="fa-solid fa-paper-plane"></i><span style={{color:'black'}}>.....</span>jasmehsidhuwebsite@outlook.com</h1>
        <h1 class='emailname'><i style={{color:'mediumturquoise'}} class="fa-solid fa-square-phone"></i><span style={{color:'black'}}>.....</span>+1(647)-852-6035</h1>
        </div>
        <div id='socials'>
