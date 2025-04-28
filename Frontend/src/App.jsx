@@ -23,7 +23,7 @@ function App() {
       showsuccess(true)
       showrejection(false)
       var sendMail=await axios.post('https://myportbackend-ktny.onrender.com',{
-        username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
+        username:document.getElementsByClassName('jasmeh')[0].value+' '+document.getElementsByClassName('jasmeh')[1].value,
         email:document.getElementById('email').value,
         message:document.getElementsByTagName('textarea')[0].value
       })
