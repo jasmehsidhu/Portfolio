@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.listen(port, () => {
-    console.log('Server Started on port ' + port)
+    console.log('Server Started')
 })
 
 app.post('/', (req, res) => {
@@ -16,13 +16,13 @@ app.post('/', (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: process.env.GMAIL_USER,
-            pass: process.env.GMAIL_APP_PASSWORD
+            user: 'jasmehasofficial@gmail.com',
+            pass: 'xikd kasi rpmj qqtq'
         }
     });
 
     const mailOptions = {
-        from: process.env.GMAIL_USER,
+        from: 'jasmehasofficial@gmail.com',
         to: "jasmeh82@gmail.com",
         subject: `Message from ${req.body.username}`,
         text: `Email : ${req.body.email} , ${req.body.message}`
