@@ -2,9 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import main from './assets/main img.jpg'
+import main from './assets/main.jpg'
 import laptop from './assets/laptop.jpg'
-import notes from './assets/notes.jpg'
+import notes from './assets/aivora.png'
+import ngo from './assets/ngo.png'
+import pass from './assets/pass manager.png'
+import school from './assets/school.png'
 import axios from 'axios'
 
 function App() {
@@ -22,8 +25,8 @@ function App() {
     else{
       showsuccess(true)
       showrejection(false)
-      var sendMail=await axios.post('https://myportbackend-ktny.onrender.com',{
-        username:document.getElementsByClassName('jasmeh')[0].value+' '+document.getElementsByClassName('jasmeh')[1].value,
+      var sendMail=await axios.post('https://myportbackend-ktny.onrender.com/',{
+        username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
         email:document.getElementById('email').value,
         message:document.getElementsByTagName('textarea')[0].value
       })
@@ -55,9 +58,9 @@ function App() {
     <div id='maininfo'>
       <h1 id='hey'>Hey, It's</h1>
       <h1 id='mainame'>Jasmeh Sidhu</h1>
-      <h1 id='designation'>I am a <span> Web developer</span> </h1>
+      <h1 id='designation'>I am a <span> MERN Developer</span> </h1>
       <p id='paragraph'>I'm a web architech based in Toronto, Ontario who is passionate about designing websites that are sleek, responsive, and user-friendly.</p>
-      <button onClick={()=>{window.open('https://docs.google.com/document/d/1l93bERacZEh4d2n4w1MMzHBDEHnRD01wyguiQPyQX10/export?format=pdf')}} id='cv'>Download CV</button>
+      <button onClick={()=>{window.open('https://drive.google.com/file/d/18GiaMWdRj2DFwutTJdNPXrniEh2sdQY6/view?usp=sharing')}} id='cv'>Download CV</button>
     </div>
     </section>
     <section id='about'>
@@ -101,19 +104,19 @@ function App() {
   <div id='prolist'>
   <div id='scrible'>
       <div class='first'>
-        <h1 class='stitle'>Notes app</h1>
-        <button class='icon'>Github </button>
+        <h1 class='stitle'>AI Chatbot</h1>
+        <button onClick={()=>{window.open('https://github.com/jasmehsidhu/Aivora')}} class='icon'>Github </button>
       </div>
      </div>
      <div id='restraunt'>
       <div class='first'>
-        <h1 class='stitle'>Restraunt Website</h1>
-        <button onClick={()=>{window.open('https://github.com/jasmehsidhu/Restraunt-website-MERN')}} class='icon'>Github </button>
+        <h1 class='stitle'>Announcement System</h1>
+        <button onClick={()=>{window.open('https://github.com/jasmehsidhu/Turner-Events')}} class='icon'>Github </button>
       </div>
      </div>
      <div id='url'>
       <div class='first'>
-        <h1 class='stitle'>URL Shortner</h1>
+        <h1 class='stitle'>Password Manager</h1>
         <button onClick={()=>{window.open('https://github.com/jasmehsidhu/URL-Shortener')}} class='icon'>Github </button>
       </div>
      </div>
@@ -146,7 +149,7 @@ function App() {
       <div id='contactme'>
         <h1 id='stitle'>Let's get in touch!</h1>
        <div id='contain'>
-       <h1 class='emailname'><i style={{color:'mediumturquoise'}}class="fa-solid fa-paper-plane"></i><span style={{color:'black'}}>.....</span>jasmehsidhuwebsite@outlook.com</h1>
+       <h1 class='emailname'><i style={{color:'mediumturquoise'}}class="fa-solid fa-paper-plane"></i><span style={{color:'black'}}>.....</span>jasmehsidhu@gmail.com</h1>
        <h1 class='emailname'><i style={{color:'mediumturquoise'}} class="fa-solid fa-square-phone"></i><span style={{color:'black'}}>.....</span>+1(647)-852-6035</h1>
        </div>
        <div id='socials'>
