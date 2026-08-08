@@ -7,7 +7,6 @@ import { Resend } from 'resend';
 const port = process.env.PORT || 1000
 const app = express()
 const resend = new Resend(process.env.RESEND);
-resend.apiKeys.create({ name: 'Production' });
 app.use(cors());
 app.use(express.json())
 app.listen(port, () => {
