@@ -8,7 +8,11 @@ const port = process.env.PORT || 1000
 const app = express()
 const resend = new Resend(process.env.RESEND);
 resend.apiKeys.create({ name: 'Production' });
-app.use(cors())
+app.use(cors({
+    origin: "https://jasmehsidhu.onrender.com",
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 app.use(express.json())
 app.listen(port, () => {
     console.log('Server Started')
