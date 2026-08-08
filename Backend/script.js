@@ -2,11 +2,11 @@ import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
 
-const PORT= process.env.PORT || 3000
+const port=1000
 const app= express()
 app.use(cors())
 app.use(express.json())
-app.listen(PORT,"0.0.0.0",()=>{
+app.listen(port,()=>{
     console.log('Server Started')
 })
 app.post('/',(req,res)=>{
@@ -14,12 +14,12 @@ app.post('/',(req,res)=>{
         service: "gmail",
         auth: {
             user: "jasmehasofficial@gmail.com",
-            pass: "ldef vatg nxyo qtbg"  
+            pass: "xikd kasi rpmj qqtq"  
         }
     });
     const mailOptions = {
         from: "jasmehasofficialgmail.com",
-        to: "jasmehsidhuwebsite@outlook.com",
+        to: "jasmeh82@gmail.com",
         subject: `Message from ${req.body.username}`,
         text: `Email : ${req.body.email} , ${req.body.message}`
     };
