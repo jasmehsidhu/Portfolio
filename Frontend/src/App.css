@@ -15,7 +15,7 @@ span{
 a{
   font-size: 25px;
   cursor:pointer;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, color 0.5s ease
 }
 a:hover{
   transform:scale(1.1);
@@ -255,7 +255,7 @@ color:mediumturquoise
   background-color: mediumturquoise;
   border-radius:20px;
   border:7px solid mediumturquoise;
-  transition: transform 0.7s ease;
+  transition: transform 0.7s ease,background 0.5s ease;
   padding:20px;
   display: flex;
   flex-direction: column;
@@ -315,9 +315,11 @@ color:mediumturquoise
 }
 #socials>i{
   color: grey;
+  transition: transform 0.5s ease, color 0.5s ease;
 }
 #socials>i:hover{
   color: mediumturquoise;
+  transform: scale(1.1);
 }
 input{
   background-color: #1f1e1e;
