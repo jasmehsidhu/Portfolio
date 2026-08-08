@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.listen(port, () => {
-    console.log('Server Started')
+    console.log('Server Started on port ' + port)
 })
 
 app.post('/', (req, res) => {
