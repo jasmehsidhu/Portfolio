@@ -14,12 +14,12 @@ app.listen(port, () => {
 })
 
 app.post('/',async (req, res) => {
-  const { data, error } = await resend.emails.send({
+  const data = await resend.emails.send({
             from: 'onboarding@resend.dev',
             to: 'jasmeh76@gmail.com',
             subject: `Message from ${req.body.username}`,
             text: `Email : ${req.body.email} , ${req.body.message}`
         })
-
+res.send(data)
   
 })
