@@ -26,7 +26,7 @@ function App() {
       showsuccess(true)
       showrejection(false)
       var sendMail=await axios.post('https://portfolio-wsdp.onrender.com/',{
-        username:document.getElementsByClassName('jasmeh')[0].value+' '+document.getElementsByClassName('jasmeh')[1].value,
+        username:document.getElementsByClassName('jasmeh')[0].value+document.getElementsByClassName('jasmeh')[0].value,
         email:document.getElementById('email').value,
         message:document.getElementsByTagName('textarea')[0].value
       })
@@ -171,6 +171,12 @@ function App() {
   <button type='submit' onClick={send} id='submit'>Send</button>
   </form>
     </section>
+    <section id='footer'>
+<div id='big'>
+              <h1  id='funame'>Jasmeh <span color='mediumturquoise'>Sidhu</span></h1>
+           <h3 id='quote'>Creating. Learning. Building.</h3>
+  </div>  
+  <h1 id='copyright'>© 2026 Jasmeh Sidhu. All rights reserved.</h1>  </section>
     </>
   )
 }
