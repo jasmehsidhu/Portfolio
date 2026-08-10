@@ -77,7 +77,6 @@ box-shadow: 0 0 20px 10px rgba(0, 255, 255, 1); /* Glow effect on hover */
 #paragraph{
   margin-top:-10px;
   width:60%;
-  text-align: center;
 }
 #cv{
   height:35px;
@@ -557,6 +556,8 @@ align-items: center;  }
   #paragraph{
     margin-top:4px;
     width:60%;
+      text-align: center;
+
   }
   #mainame{
     margin-top:40px
