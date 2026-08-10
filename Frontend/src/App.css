@@ -409,6 +409,7 @@ color:red
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top:70px
 }
 #funame{
 margin:0
