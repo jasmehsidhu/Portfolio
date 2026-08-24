@@ -105,7 +105,7 @@ function App() {
   <div id='scrible'>
       <div class='first'>
         <h1 class='stitle'>AI Chatbot</h1>
-        <button onClick={()=>{window.open('https://aivora-9mkl.onrender.com/')}} class='icon'>Open Source </button>
+        <button onClick={()=>{window.open('https://aivora-9mkl.onrender.com/')}} class='icon'>Live </button>
       </div>
      </div>
      <div id='restraunt'>
