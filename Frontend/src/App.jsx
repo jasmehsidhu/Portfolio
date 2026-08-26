@@ -39,9 +39,10 @@ function App() {
   var [rmessage,setrejection]=useState('invalid')
   var [success,showsuccess]=useState(false)
   var [rejection,showrejection]=useState(false)
+  var [contact,setcontact]=useState(false)
   return (
     <>
-   <section id="navbar">
+   {!contact?<><section id="navbar">
     <h1 id='name'>
      <span>Jasmeh</span> Sidhu
     </h1>
@@ -50,7 +51,7 @@ function App() {
       <a  onClick={(e)=>{setbline(e.target.getBoundingClientRect().left, window.location.href='#about')}} >About</a>
       <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left),window.location.href='#projects'}}>Projects</a>
       <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left),window.location.href='#services'}}>Services</a>
-      <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left,window.location.href='#contact')}}>Contact</a>
+      <a onClick={(e)=>{setbline(e.target.getBoundingClientRect().left,setcontact(true))}}>Contact</a>
     </div>
     </section>
     <section id='home'>
@@ -105,7 +106,7 @@ function App() {
   <div id='scrible'>
       <div class='first'>
         <h1 class='stitle'>AI Chatbot</h1>
-        <button onClick={()=>{window.open('https://aivora-9mkl.onrender.com/')}} class='icon'>Live </button>
+        <button onClick={()=>{window.open('https://aivora-9mkl.onrender.com/')}} class='icon'>Open Source </button>
       </div>
      </div>
      <div id='restraunt'>
@@ -144,8 +145,7 @@ function App() {
           <p class='serpara'>Custom app development services using React Native to build high-performance, cross-platform mobile applications. Designed for both iOS and Android, each app delivers a seamless user experience with smooth performance and modern UI/UX. From intuitive interfaces to powerful backend integration, every project is crafted to meet unique business needs. Whether it's a brand-new mobile app, feature enhancements, or ongoing maintenance, the right solutions ensure scalability and efficiency. Contact us for further information and bring your app idea to life!</p>
         </div>
       </div>
-    </section>
-    <section id='contact'>
+    </section></>: <> <button id='back' onClick={()=>{setcontact(false)}}>Back</button><section id='contact'>
       <div id='contactme'>
         <h1 id='stitle'>Let's get in touch!</h1>
        <div id='contain'>
@@ -170,7 +170,8 @@ function App() {
   <textarea placeholder='Message...' rows='10'></textarea>
   <button type='submit' onClick={send} id='submit'>Send</button>
   </form>
-    </section>
+    </section></>}
+   
     <section id='footer'>
 <div id='big'>
               <h1  id='funame'>Jasmeh <span color='mediumturquoise'>Sidhu</span></h1>
