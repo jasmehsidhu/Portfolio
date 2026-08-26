@@ -293,10 +293,21 @@ color:mediumturquoise
   display: flex;
   justify-content: center;
   font-family: "Afacad Flux", sans-serif;
-  gap:10%
+  gap:10%;
+  margin-bottom: 100px;
 }
 .emailname{
   font-size:20px
+}
+#back{
+  margin-top:80px;
+  margin-left: 50px;
+  height:30px;
+  width:100px;
+  border:2px solid mediumturquoise;
+  border-radius:5px;
+  color:mediumturquoise;
+  background:none
 }
 #stitle{
   font-family: "Afacad Flux", sans-serif;
